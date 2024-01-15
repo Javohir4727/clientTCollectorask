@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/main.css" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>Name</li>
+        <li>Age</li>
+        <li>Region</li>
+        <li>Gender</li>
+        <li>Time</li>
+      </ul>
+      <div class="burger_button">
+        <button>Sign up</button>
+      </div>
+    </header>
+    <div class="user_table">
+      <h2>User data</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Region</th>
+            <th>Gender</th>
+            <th>Added time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Javohir</td>
+            <td>26</td>
+            <td>Jizzax</td>
+            <td>Male</td>
+            <td>01/15/2024</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="sign_up">
+      <div class="items_container">
+        <h1>Registration</h1>
+        <form>
+          <input type="text" placeholder="Enter your name" />
+          <br />
+          <input type="number" placeholder="Enter your age" />
+          <br />
+          <div class="wrap_gender_form">
+            <label for="man">Man</label>
+            <input type="checkbox" id="man" />
+            <label for="women">Women</label>
+            <input type="checkbox" id="women" />
+          </div>
+          <select id="region">
+            <option value="toshkent">Toshkent</option>
+            <option value="sirdaryo">sirdaryo</option>
+            <option value="jizzax">Jizzax</option>
+            <option value="samarqand">Samarqand</option>
+            <option value="buxoro">Buxoro</option>
+            <option value="qashqadaryo">Qashqadaryo</option>
+            <option value="namangan">Namangan</option>
+            <option value="farg'ona">Farg'ona</option>
+            <option value="andijon">Andijon</option>
+            <option value="nukus">Nukus</option>
+            <option value="navoiy">Navoiy</option>
+          </select>
+          <br />
+          <button>Sign up</button>
+        </form>
+        <div class="close">close</div>
+      </div>
+    </div>
     <script src="./JS/collector.js"></script>
-</body>
+  </body>
 </html>

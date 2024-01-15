@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  background-color: #e8bc0e;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+
+  ul {
+    display: flex;
+    gap: 80px;
+    margin-left: 200px;
+
+    li {
+      list-style: none;
+      cursor: pointer;
+      color: #453e3b;
+    }
+  }
+  .burger_button {
+    margin-right: 200px;
+
+    button {
+      border-radius: 5px;
+      background-color: #453e3b;
+      color: #e8bc0e;
+      padding: 6px 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 200ms;
+
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+}
+
+.user_table {
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    font-size: 26px;
+    color: #453e3b;
+    margin: 30px 0;
+  }
+
+  table {
+    width: 600px;
+    margin-top: 100px;
+  }
+
+  table,
+  thead,
+  tbody,
+  td,
+  tr,
+  th {
+  padding: 5px;
+    align-items: center;
+    color: #453e3b;
+    border: 1px solid #453e3b;
+    border-collapse: collapse;
+  }
+}
+
+.sign_up {
+  display: grid;
+  grid-template-columns: auto;
+  padding-top: 100px;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: calc(100%);
+  width: 500px;
+  background-color: #453e3b;
+  height: 100vh;
+  transition: 500ms;
+
+  .items_container {
+    h1 {
+      color: #e8bc0e;
+      letter-spacing: 1.5px;
+      margin-bottom: 30px;
+    }
+    input {
+      padding: 10px 20px;
+      margin: 15px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    label {
+      cursor: pointer;
+      color: #e8bc0e;
+      margin: 0 10px 0 20px;
+      &:first-child {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+
+    select {
+      margin: 20px 0;
+      padding: 6px 50px;
+      border: 1px solid #453e3b;
+      outline: none;
+      border-radius: 5px;
+
+      option {
+        padding: 20px;
+      }
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 75px;
+      border: none;
+      border-radius: 5px;
+      background-color: #e8bc0e;
+      color: #453e3b;
+      letter-spacing: 1px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .close {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #e8bc0e;
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: #453e3b;
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+  }
+}
