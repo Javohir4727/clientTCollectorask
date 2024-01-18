@@ -50,18 +50,3 @@ function sortHandler(val) {
     }
   }
 }
-function sortNameHandler() {
-  body.classList.toggle("sortActiveName");
-}
-function sortAgeHandler() {
-  body.classList.toggle("sortActiveAge");
-}
-function sortRegionHandler() {
-  body.classList.toggle("sortActiveRegion");
-}
-function sortGenderHandler() {
-  body.classList.toggle("sortActiveGender");
-}
-function sortTimeHandler() {
-  body.classList.toggle("sortActiveTime");
-}
