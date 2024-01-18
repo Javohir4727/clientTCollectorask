@@ -5,27 +5,139 @@
   font-family: sans-serif;
 }
 
+.container {
+  width: 1000px;
+  transition: 500ms;
+  margin: auto;
+}
+
 header {
+  z-index: 1;
   display: flex;
   background-color: #e8bc0e;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  position: relative;
 }
 header ul {
   display: flex;
   gap: 80px;
   margin-left: 200px;
 }
-header ul li {
+header li {
   list-style: none;
   cursor: pointer;
   color: #453e3b;
 }
-header .burger_button {
+header li:hover {
+  color: black;
+}
+
+.sortFromName {
+  box-shadow: 1px 1px #453e3b;
+  top: -10px;
+  left: 10%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+}
+.sortFromName p {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.948);
+  padding: 10px 0;
+}
+.sortFromName p:hover {
+  background-color: rgba(0, 0, 0, 0.218);
+}
+
+.sortFromAge {
+  box-shadow: 1px 1px #453e3b;
+  top: -10px;
+  left: 18%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+}
+.sortFromAge p {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 0;
+}
+.sortFromAge p:hover {
+  background-color: rgba(0, 0, 0, 0.218);
+}
+
+.sortFromRegion {
+  box-shadow: 1px 1px #453e3b;
+  top: -390px;
+  left: 24%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+}
+.sortFromRegion p {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 0;
+}
+.sortFromRegion p:hover {
+  background-color: rgba(0, 0, 0, 0.218);
+}
+
+.sortFromGender {
+  box-shadow: 1px 1px #453e3b;
+  top: -10px;
+  left: 33%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+}
+.sortFromGender p {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 0;
+}
+.sortFromGender p:hover {
+  background-color: rgba(0, 0, 0, 0.218);
+}
+
+.sortFromTime {
+  box-shadow: 1px 1px #453e3b;
+  top: -10px;
+  left: 42%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+}
+.sortFromTime p {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 0;
+}
+.sortFromTime p:hover {
+  background-color: rgba(0, 0, 0, 0.218);
+}
+
+.burger_button {
   margin-right: 200px;
 }
-header .burger_button button {
+.burger_button button {
   border-radius: 5px;
   background-color: #453e3b;
   color: #e8bc0e;
@@ -35,13 +147,14 @@ header .burger_button button {
   cursor: pointer;
   transition: 200ms;
 }
-header .burger_button button:hover {
+.burger_button button:hover {
   background-color: black;
 }
 
 .user_table {
   display: flex;
   justify-content: center;
+  transition: 500ms;
 }
 .user_table h2 {
   font-size: 26px;
@@ -71,6 +184,7 @@ header .burger_button button:hover {
   padding-top: 100px;
   justify-content: center;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 100%;
   width: 500px;
@@ -134,6 +248,41 @@ header .burger_button button:hover {
   font-weight: 800;
   font-size: 20px;
   letter-spacing: 2px;
+}
+.sign_up .items_container .container {
+  transform: translateX(-200px);
+}
+
+.active .sign_up {
+  left: calc(100% - 500px);
+}
+.active .user_table {
+  transform: translateX(-200px);
+}
+
+.sortActiveName .sortFromName {
+  top: 73px;
+  z-index: 1;
+}
+
+.sortActiveAge .sortFromAge {
+  z-index: 1;
+  top: 73px;
+}
+
+.sortActiveRegion .sortFromRegion {
+  z-index: 1;
+  top: 73px;
+}
+
+.sortActiveGender .sortFromGender {
+  top: 73px;
+  z-index: 1;
+}
+
+.sortActiveTime .sortFromTime {
+  top: 73px;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
