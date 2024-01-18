@@ -9,40 +9,72 @@
   <body>
     <header>
       <ul>
-        <li>Name</li>
-        <li>Age</li>
-        <li>Region</li>
-        <li>Gender</li>
-        <li>Time</li>
+        <li onclick="sortHandler('uName')">Name</li>
+        <li onclick="sortHandler('Age')">Age</li>
+        <li onclick="sortHandler('Region')">Region</li>
+        <li onclick="sortHandler('Gender')">Gender</li>
+        <li onclick="sortHandler('Time')">Time</li>
       </ul>
       <div class="burger_button">
-        <button>Sign up</button>
+        <button id="signUp" onclick="receptionHandler()">Sign up</button>
       </div>
     </header>
-    <div class="user_table">
-      <h2>User data</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Region</th>
-            <th>Gender</th>
-            <th>Added time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Javohir</td>
-            <td>26</td>
-            <td>Jizzax</td>
-            <td>Male</td>
-            <td>01/15/2024</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="sortFromName">
+      <p>Sort A - Z</p>
+      <p>Sort Z - A</p>
+    </div>
+    <div class="sortFromAge">
+      <p>Sort 1 - 100</p>
+      <p>Sort 100 - 1</p>
+    </div>
+    <div class="sortFromRegion">
+      <p>Toshkent</p>
+      <p>sirdaryo</p>
+      <p>Jizzax</p>
+      <p>Samarqand</p>
+      <p>Buxoro</p>
+      <p>Xorazm</p>
+      <p>Qashqadaryo</p>
+      <p>Namangan</p>
+      <p>Farg'ona</p>
+      <p>Andijon</p>
+      <p>Nukus</p>
+      <p>Navoiy</p>
+    </div>
+<div class="sortFromGender">
+  <p>Male</p>
+  <p>Female</p>
+</div>
+<div class="sortFromTime">
+  <p>New additions</p>
+  <p>Old additions</p>
+</div>
+    <div class="container">
+      <div class="user_table">
+        <h2>User data</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Region</th>
+              <th>Gender</th>
+              <th>Added time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Javohir</td>
+              <td>26</td>
+              <td>Jizzax</td>
+              <td>Male</td>
+              <td>01/15/2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="sign_up">
       <div class="items_container">
@@ -74,7 +106,7 @@
           <br />
           <button>Sign up</button>
         </form>
-        <div class="close">close</div>
+        <div class="close" onclick="receptionHandler()">close</div>
       </div>
     </div>
     <script src="./JS/collector.js"></script>

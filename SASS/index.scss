@@ -4,40 +4,153 @@
   margin: 0;
   font-family: sans-serif;
 }
+
+.container {
+  width: 1000px;
+  transition: 500ms;
+  margin: auto;
+}
 header {
+  z-index: 1;
   display: flex;
   background-color: #e8bc0e;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  position: relative;
 
   ul {
     display: flex;
     gap: 80px;
     margin-left: 200px;
+  }
 
-    li {
-      list-style: none;
-      cursor: pointer;
-      color: #453e3b;
+  li {
+    list-style: none;
+    cursor: pointer;
+    color: #453e3b;
+
+    &:hover {
+      color: black;
     }
   }
-  .burger_button {
-    margin-right: 200px;
+}
+.sortFromName {
+  box-shadow: 1px 1px #453e3b;
+  top: -10px;
+  left: 10%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+  p {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.948);
+    padding: 10px 0;
 
-    button {
-      border-radius: 5px;
-      background-color: #453e3b;
-      color: #e8bc0e;
-      padding: 6px 20px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      transition: 200ms;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.218);
+    }
+  }
+}
+.sortFromAge {
+  box-shadow: 1px 1px #453e3b;
+  top: -10px;
+  left: 18%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+  p {
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 0;
 
-      &:hover {
-        background-color: black;
-      }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.218);
+    }
+  }
+}
+.sortFromRegion {
+  box-shadow: 1px 1px #453e3b;
+  top: -390px;
+  left: 24%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+  p {
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 0;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.218);
+    }
+  }
+}
+.sortFromGender {
+  box-shadow: 1px 1px #453e3b;
+  top: -10px;
+  left: 33%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+  p {
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 0;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.218);
+    }
+  }
+}
+.sortFromTime {
+  box-shadow: 1px 1px #453e3b;
+  top: -10px;
+  left: 42%;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: -1;
+  transition: 500ms;
+  p {
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 0;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.218);
+    }
+  }
+}
+
+.burger_button {
+  margin-right: 200px;
+
+  button {
+    border-radius: 5px;
+    background-color: #453e3b;
+    color: #e8bc0e;
+    padding: 6px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 200ms;
+
+    &:hover {
+      background-color: black;
     }
   }
 }
@@ -45,6 +158,7 @@ header {
 .user_table {
   display: flex;
   justify-content: center;
+  transition: 500ms;
 
   h2 {
     font-size: 26px;
@@ -63,7 +177,7 @@ header {
   td,
   tr,
   th {
-  padding: 5px;
+    padding: 5px;
     align-items: center;
     color: #453e3b;
     border: 1px solid #453e3b;
@@ -77,6 +191,7 @@ header {
   padding-top: 100px;
   justify-content: center;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: calc(100%);
   width: 500px;
@@ -144,5 +259,50 @@ header {
       font-size: 20px;
       letter-spacing: 2px;
     }
+
+    .container {
+      transform: translateX(-200px);
+    }
   }
+}
+.active {
+  .sign_up {
+    left: calc(100% - 500px);
+  }
+
+  .user_table {
+    transform: translateX(-200px);
+  }
+}
+
+.sortActiveName {
+  .sortFromName {
+    top: 73px;
+    z-index: 1;
+  }
+}
+.sortActiveAge {
+  .sortFromAge {
+    z-index: 1;
+    top: 73px;
+  }
+}
+.sortActiveRegion {
+  .sortFromRegion{
+    z-index: 1;
+    top: 73px;
+    
+  }
+}
+.sortActiveGender{
+  .sortFromGender{
+    top: 73px;
+    z-index: 1;
+  }
+}
+.sortActiveTime{
+.sortFromTime{
+  top: 73px;
+  z-index: 1;
+}
 }
