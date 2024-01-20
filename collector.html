@@ -16,7 +16,7 @@
         <li onclick="sortHandler('Time')">Time</li>
       </ul>
       <div class="burger_button">
-        <button id="signUp" onclick="receptionHandler()">Sign up</button>
+        <button id="signUp" onclick="receptionHandler()">+ Add user</button>
       </div>
     </header>
     <div class="sortFromName">
@@ -63,15 +63,7 @@
               <th>Added time</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Javohir</td>
-              <td>26</td>
-              <td>Jizzax</td>
-              <td>Male</td>
-              <td>01/15/2024</td>
-            </tr>
+          <tbody id="result">
           </tbody>
         </table>
       </div>
@@ -79,16 +71,16 @@
     <div class="sign_up">
       <div class="items_container">
         <h1>Registration</h1>
-        <form>
-          <input type="text" placeholder="Enter your name" />
+        <form id="form">
+          <input type="text" placeholder="Enter your name" id="nameInp"/>
           <br />
-          <input type="number" placeholder="Enter your age" />
+          <input type="number" placeholder="Enter your age" id="ageInp"/>
           <br />
           <div class="wrap_gender_form">
             <label for="man">Man</label>
-            <input type="checkbox" id="man" />
+            <input type="radio" id="uGen" name="gender"/>
             <label for="women">Women</label>
-            <input type="checkbox" id="women" />
+            <input type="radio" id="uGen" name="gender" />
           </div>
           <select id="region">
             <option value="toshkent">Toshkent</option>
@@ -104,7 +96,7 @@
             <option value="navoiy">Navoiy</option>
           </select>
           <br />
-          <button>Sign up</button>
+          <button type="submit">Add user</button>
         </form>
         <div class="close" onclick="receptionHandler()">close</div>
       </div>
