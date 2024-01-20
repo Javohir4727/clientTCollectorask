@@ -83,7 +83,7 @@ header li:hover {
   width: 150px;
   text-align: center;
   z-index: -1;
-  transition: 500ms;
+  transition: 1200ms;
 }
 .sortFromRegion p {
   cursor: pointer;
